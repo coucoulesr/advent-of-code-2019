@@ -1,2 +1,13 @@
-This Github repository contains the solutions to the [Advent of Code 2019](https://adventofcode.com/2019/aboutmade by Eric Wastl.) event, as devised by Richard Coucoules.
-Advent of Code is made by [Eric Wastl](http://was.tl/).
+# Advent of Code 2019
+This Github repository contains the solutions to the [Advent of Code 2019](https://adventofcode.com/2019/about) event, as devised by Richard Coucoules.
+Advent of Code is made by [Eric Wastl](http://was.tl/). Information on the Advent of Code event, reproduced from the site's about page, is shown below.
+
+## About Advent of Code
+<p>Hi!  I'm <a href="http://was.tl/">Eric Wastl</a>. I make Advent of Code.  I hope you like it!  I also made <a href="http://vanilla-js.com/">Vanilla JS</a>, <a href="http://phpsadness.com/">PHP Sadness</a>, and <a href="http://was.tl/projects/">lots of other things</a>.  You can find me on <a href="https://twitter.com/ericwastl">Twitter</a> and <a href="https://github.com/topaz">GitHub</a>.</p>
+<p><em>Advent of Code</em> is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in <a href="https://github.com/search?q=advent+of+code">any</a> programming language you like. People use them as a <a href="/leaderboard">speed contest</a>, <a href="https://y3l2n.com/2018/05/09/interview-prep-advent-of-code/">interview</a> <a href="https://twitter.com/dznqbit/status/1037607793144938497">prep</a>, <a href="https://twitter.com/pgoultiaev/status/950805811583963137">company training</a>, <a href="https://gitlab.com/imhoffman/fa19b4-mat3006/wikis/home">university</a> <a href="https://www.gribblelab.org/scicomp2018/">coursework</a>, <a href="https://twitter.com/mrdanielklein/status/936267621468483584">practice</a> <a href="https://comp215.blogs.rice.edu/">problems</a>, or to <a href="https://www.reddit.com/r/adventofcode/search?q=flair%3Aupping&restrict_sr=on">challenge each other</a>.</p>
+<p>You don't need a computer science background to participate - just a little programming knowledge and some <a href="https://www.reddit.com/r/adventofcode/comments/7kd8jt/what_would_you_say_are_the_minimal_skills_for/dre0uu3/">problem solving skills</a> will get you pretty far. Nor do you need a fancy computer; every problem has a solution that completes in at most 15 seconds on ten-year-old hardware.</p>
+<p>If you'd like to support Advent of Code, you can do so indirectly by helping to <span class="share">[Share <span class="share-content">on
+  <a href="https://twitter.com/intent/tweet?text=Daily+programming+puzzles+at+Advent+of+Code&amp;url=https%3A%2F%2Fadventofcode%2Ecom%2F&amp;related=ericwastl&amp;hashtags=AdventOfCode" target="_blank">Twitter</a>
+  <a href="http://www.reddit.com/submit?url=https%3A%2F%2Fadventofcode%2Ecom%2F&amp;title=Daily+programming+puzzles+at+Advent+of+Code" target="_blank">Reddit</a
+></span>]</span> it with others, or directly via <a href="support">PayPal or Coinbase</a>.</p>
+<p>Advent of Code is a registered trademark in the United States.</p>
