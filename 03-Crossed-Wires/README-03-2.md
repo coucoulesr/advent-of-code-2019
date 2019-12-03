@@ -6,16 +6,16 @@ To do this, calculate the number of steps each wire takes to reach each intersec
 
 The number of steps a wire takes is the total number of grid squares the wire has entered to get to that location, including the intersection being considered. Again consider the example from above:
 
-...........
-.+-----+...
-.|.....|...
-.|..+--X-+.
-.|..|..|.|.
-.|.-X--+.|.
-.|..|....|.
-.|.......|.
-.o-------+.
-...........
+    ...........
+    .+-----+...
+    .|.....|...
+    .|..+--X-+.
+    .|..|..|.|.
+    .|.-X--+.|.
+    .|..|....|.
+    .|.......|.
+    .o-------+.
+    ...........
 
 In the above example, the intersection closest to the central port is reached after 8+5+5+2 = 20 steps by the first wire and 7+6+4+3 = 20 steps by the second wire for a total of 20+20 = 40 steps.
 
