@@ -4,14 +4,16 @@ class intCodeRunner():
         self.setInput(input)
 
     def run(self):
-        ADD = 1
-        MULTIPLY = 2
-        INPUT = 3
-        OUTPUT = 4
-        JUMP_IF_TRUE = 5
-        JUMP_IF_FALSE = 6
-        LESS_THAN = 7
-        EQUALS = 8
+        instructionDict = {
+        1 : self._add,
+        2 : self._multiply,
+        3 : self._input,
+        4 : self._output,
+        5 : lambda *params: self._jump_if(True, *params),
+        6 : lambda *params: self._jump_if(False, *params),
+        7 : self._less_than,
+        8 : self._equals,
+        }
         HALT = 99
 
         index = 0
@@ -20,24 +22,11 @@ class intCodeRunner():
             op_code = ("00000" + str(op_code))[-5:]
             param_modes = [int(char) for char in op_code[0:3]][::-1]
             instruction = int(op_code[3:])
+            
             if instruction == HALT:
                 return self.array
-            elif instruction == ADD:
-                index = self._add(index, param_modes)
-            elif instruction == MULTIPLY:
-                index = self._multiply(index, param_modes)
-            elif instruction == INPUT:
-                index = self._input(index)
-            elif instruction == OUTPUT:
-                index = self._output(index, param_modes)
-            elif instruction == JUMP_IF_TRUE:
-                index = self._jump_if(True, index, param_modes)
-            elif instruction == JUMP_IF_FALSE:
-                index = self._jump_if(False, index, param_modes)
-            elif instruction == LESS_THAN:
-                index = self._less_than(index, param_modes)
-            elif instruction == EQUALS:
-                index = self._equals(index, param_modes)
+            if instruction in instructionDict:
+                index = instructionDict[instruction](index, param_modes)
             else:
                 raise RuntimeError("Undefined instruction encountered. Please check instruction array.")
  
@@ -81,7 +70,7 @@ class intCodeRunner():
         index += 4
         return index
     
-    def _input(self, index):
+    def _input(self, index, param_modes):
         pointer = self.array[index + 1]
         self.array[pointer] = self.input
         index += 2
